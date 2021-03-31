@@ -1,6 +1,18 @@
-.box{
-border: solid 3px black;
-background-color: aqua;
-padding: 50px;
-margin-bottom: 50px;
+.box {
+  border: solid 2px black;
+  padding: 50px;
+}
+
+.box4 {
+  background-color: blue;
+  margin: 50px;
+}
+.box3 {
+  background-color: yellow;
+}
+.box2 {
+  background-color: green;
+}
+.box1 {
+  background-color: pink;
 }
