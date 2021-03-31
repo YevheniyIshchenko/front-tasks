@@ -6,14 +6,14 @@ a:visited{
     background-color: orange;
     color: green;
 }
-a:active, button:active:enabled {
+a:active, button:active{
     border: 3px solid red;
 }
 a:hover{
     font-size: 24px;
 }
 button[disabled]{
-    border: 2px solid grey;
+    border: 2px dashed grey;
 }
 button:hover:enabled{
     background-color: grey;
