@@ -6,7 +6,7 @@ a:visited{
     background-color: orange;
     color: green;
 }
-a:active, button:active {
+a:active, button:active:enabled {
     border: 3px solid red;
 }
 a:hover{
