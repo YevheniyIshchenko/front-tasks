@@ -1,12 +1,24 @@
 .box{
-    background-color: bisque;
-    border-top: solid 10px firebrick;
-    border-right: solid 20px chartreuse;
-    border-bottom: dashed 10px burlywood;
-    border-left: dashed 20px aqua;
-    width: 420px;
-    height: 140px;
-    margin: 50px 100px;
-    padding: 20px;
-    font-size: 24px;
+    width: 100px;
+    height: 50px;
+    margin: 50px;
+}
+.box1{
+    background-color: forestgreen;
+    border-radius: 16px;
+}
+.box2{
+    border-radius: 50%;
+    background-color: darkmagenta;
+}
+.box3{
+    height: 100px;
+    border-radius: 100%;
+    background-color: aquamarine;
+}
+.box4{
+    box-sizing: border-box;
+    height: 100px;
+    border: 50px solid transparent;
+    border-top-color: brown;
 }
