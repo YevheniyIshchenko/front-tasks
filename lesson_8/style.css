@@ -1,18 +1,12 @@
-body{
-    background-color: antiquewhite;
-}
 .box{
-    border: 8px solid black;
-    margin: 16px;
-    padding: 16px;
-    width: 512px;
-    height: 128px;
-}
-.box1{
-    box-sizing: content-box;
-    background-color: aquamarine;
-}
-.box2{
-    box-sizing: border-box;
-    background-color: azure;
+    background-color: bisque;
+    border-top: solid 10px firebrick;
+    border-right: solid 20px chartreuse;
+    border-bottom: dashed 10px burlywood;
+    border-left: dashed 20px aqua;
+    width: 420px;
+    height: 140px;
+    margin: 50px 100px;
+    padding: 20px;
+    font-size: 24px;
 }
