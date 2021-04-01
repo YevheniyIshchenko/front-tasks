@@ -22,7 +22,9 @@ footer {
   float: left;
 }
 .container{
-  box-sizing: border-box;
   float: left;
   width: 50%;
+}
+*{
+  box-sizing: border-box;
 }
