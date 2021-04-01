@@ -1,16 +1,31 @@
+* {
+  box-sizing: border-box;
+}
 .header {
-  position: relative;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
   background-color: darkturquoise;
   height: 40px;
 }
 .navigation {
+  position:absolute;
   height: 40px;
+  top: 0;
+}
+.nav-list {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 .nav-item {
+  position: relative;
   display: inline-block;
   margin-left: 16px;
-  color: white;
+  height: 40px;
   line-height: 40px;
+  color: white;
 }
 .content {
   background-color: beige;
@@ -29,29 +44,29 @@
   height: 60px;
   background-color: brown;
 }
-.ear_right{
+.ear_right {
   position: absolute;
-  bottom: 200px;right: -40px;
+  bottom: 200px;
+  right: -40px;
 }
-.ear_left{
+.ear_left {
   position: absolute;
-  bottom: 200px;left: -40px;
+  bottom: 200px;
+  left: -40px;
 }
-.eye{
+.eye {
   height: 30px;
   width: 30px;
   border-radius: 100%;
   background-color: grey;
-
 }
-.eye_left{
+.eye_left {
   position: absolute;
   top: 80px;
   left: 40px;
 }
-.eye_right{
+.eye_right {
   position: absolute;
   top: 80px;
   right: 40px;
-
 }
