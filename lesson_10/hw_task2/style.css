@@ -8,9 +8,10 @@ header{
 .articles-list{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 .article{
-  width: 300px;
+  min-width: 300px;
   flex-grow: 1;
   margin: 8px;
   padding: 16px;
