@@ -1,0 +1,25 @@
+body{
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  justify-content: center;
+}
+.articles-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.article{
+  width: 300px;
+  flex-grow: 1;
+}
+.article h2{
+  margin: 8px;
+  padding: 16px;
+  background-color: bisque;
+}
+.article p{
+  margin: 8px;
+  padding: 16px;
+  background-color: bisque;
+}
