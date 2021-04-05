@@ -6,11 +6,12 @@
   margin: 16px;
   cursor: pointer;
   position: relative;
+  color: white;
 }
 .dropdown:hover{
   opacity: 1;
   font-size: 16px;
-  color: white;
+  
 }
 .menu-list{
   position: absolute;
