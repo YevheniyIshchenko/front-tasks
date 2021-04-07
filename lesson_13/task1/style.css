@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+.mountains{
+    padding: 32px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color:#ffffff;
+    width: 300px;
+    height: 500px;
+    background-image: url(/img/nature.jpeg);
+    background-clip: border-box;
+    background-position: center;
+}
