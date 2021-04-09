@@ -1,5 +1,10 @@
+html{
+    box-sizing: border-box;
+}
 .rabbit{
     display: block;
     width: 500px;
-    margin: 200px auto 0;
+    margin: 0 auto;
+    margin-top: 200px;
+    height: auto;
 }
