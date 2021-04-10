@@ -1,0 +1,19 @@
+.main_form{
+    margin: 32px;
+}
+input{
+    margin: 8px;
+    display: block;
+}
+textarea{
+    margin: 8px;
+}
+select{
+    margin: 8px;
+}
+button{
+    margin: 8px;
+}
+input[type="radio"]{
+    display:inline-block;
+}
