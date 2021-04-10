@@ -1,21 +1,22 @@
-
-.main_form{
-    margin: 32px;
+.main_form {
+  margin: 32px;
 }
-.form_input{
-    margin: 8px;
-    display: block;
+.form_input {
+  margin: 8px;
+  display: block;
 }
-textarea{
-    margin-left: 8px;
-  
+textarea {
+  display: block;
+  margin: 8px;
 }
-select{
+select {
+  display: block;
   margin-left: 8px;
 }
-button{
-  margin-left: 8px;
+button {
+  display: block;
+  margin: 8px;
 }
-.languages{
-   margin-left: 8px;
+.languages {
+  margin: 8px;
 }
