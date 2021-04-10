@@ -10,3 +10,8 @@
 .languages{
   margin: 8px;
 }
+.form_input_color{
+  display: block;
+  margin: 8px;
+  box-sizing: content-box;
+}
