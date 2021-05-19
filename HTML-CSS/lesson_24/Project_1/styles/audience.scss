@@ -76,7 +76,7 @@
   }
 }
 
-.audiences__buttons {
+.audience__buttons {
   @include for-large-up {
     display: flex;
     flex-direction: row;
@@ -84,7 +84,7 @@
   }
 }
 
-.audiences-button {
+.audience-button {
   width: 100%;
   @include for-large-up {
     width: 160px;
@@ -92,7 +92,7 @@
   }
 }
 
-.audiences-button-white {
+.audience-button-white {
   background-color: #fff;
   color: #3040c4;
   width: 100%;
@@ -108,7 +108,7 @@
   }
 }
 
-.audiences__images {
+.audience__images {
   margin-top: 40px;
 
   @include for-large-up {

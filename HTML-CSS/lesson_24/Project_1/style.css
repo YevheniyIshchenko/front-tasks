@@ -849,24 +849,24 @@
 }
 
 @media screen and (min-width: 1400px) {
-  .audiences__buttons {
+  .audience__buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 }
 
-.audiences-button {
+.audience-button {
   width: 100%;
 }
 @media screen and (min-width: 1400px) {
-  .audiences-button {
+  .audience-button {
     width: 160px;
     margin-top: 34px;
   }
 }
 
-.audiences-button-white {
+.audience-button-white {
   background-color: #fff;
   color: #3040c4;
   width: 100%;
@@ -877,22 +877,22 @@
   margin-top: 15px;
 }
 @media screen and (min-width: 1400px) {
-  .audiences-button-white {
+  .audience-button-white {
     margin-left: 10px;
     margin-top: 34px;
     width: 160px;
   }
 }
 
-.audiences__images {
+.audience__images {
   margin-top: 40px;
 }
 @media screen and (min-width: 1400px) {
-  .audiences__images {
+  .audience__images {
     display: flex;
   }
 }
-.audiences__images__container {
+.audience__images__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -905,7 +905,7 @@
   border-radius: 8px;
 }
 @media screen and (min-width: 1400px) {
-  .audiences__images__container {
+  .audience__images__container {
     width: 262px;
     height: 300px;
     margin-right: 30px;
@@ -913,23 +913,23 @@
     margin-bottom: 110px;
   }
 }
-.audiences__images__container:hover {
+.audience__images__container:hover {
   background-color: #3141c5;
 }
-.audiences__images__container:hover .user-image__description {
+.audience__images__container:hover .user-image__description {
   color: white;
 }
-.audiences__images__container:last-child {
+.audience__images__container:last-child {
   margin-bottom: 50px;
 }
-.audiences__images__container .user-image__description {
+.audience__images__container .user-image__description {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   text-align: center;
   margin-top: 22px;
 }
-.audiences__images__container .user-image__description:hover {
+.audience__images__container .user-image__description:hover {
   color: white;
 }
 
