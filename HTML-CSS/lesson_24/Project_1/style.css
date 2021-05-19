@@ -816,7 +816,6 @@
   }
 }
 .content__title {
-  margin-top: 50px;
   margin-bottom: 0;
   font-weight: 700;
   font-size: 22px;
@@ -915,6 +914,7 @@
   .audience__images {
     display: flex;
     margin-top: 0;
+    justify-content: center;
   }
 }
 .audience__images__container {
@@ -936,6 +936,9 @@
     margin-right: 30px;
     margin-top: 111px;
     margin-bottom: 110px;
+  }
+  .audience__images__container:last-child {
+    margin-right: 0;
   }
 }
 .audience__images__container:hover {
