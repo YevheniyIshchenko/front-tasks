@@ -760,28 +760,28 @@
   min-width: 100%;
 }
 
-.audiences {
+.audience {
   background: rgba(0, 161, 198, 0.07);
 }
 @media screen and (min-width: 1400px) {
-  .audiences {
+  .audience {
     height: 983px;
   }
 }
-.audiences__container {
+.audience__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 320px;
 }
 @media screen and (min-width: 1400px) {
-  .audiences__container {
+  .audience__container {
     width: 100%;
     justify-content: center;
   }
 }
 @media screen and (min-width: 1400px) {
-  .audiences__header {
+  .audience__header {
     width: 100%;
     justify-content: center;
   }
