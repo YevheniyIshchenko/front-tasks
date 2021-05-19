@@ -116,7 +116,7 @@
   }
 }
 
-.audience__images {
+.audience__cards{
   margin-top: 40px;
 
   @include for-large-up {
@@ -125,7 +125,7 @@
     justify-content: center;
   }
 
-  &__container {
+  .user-card {
     display: flex;
     flex-direction: column;
     align-items: center;
