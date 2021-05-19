@@ -164,6 +164,8 @@
     .user-image {
       margin-top: 22px;
       &__description {
+        width: 250px;
+        height: 28px;
         font-weight: 700;
         font-size: 22px;
         line-height: 28px;
@@ -171,6 +173,11 @@
         margin-top: 22px;
         &:hover {
           color: white;
+        }
+
+        @include for-large-up{
+          width: 212px;
+          height: 28px;
         }
       }
     }

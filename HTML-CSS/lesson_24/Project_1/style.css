@@ -956,6 +956,8 @@
   margin-top: 22px;
 }
 .audience__cards .user-card .user-image__description {
+  width: 250px;
+  height: 28px;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
@@ -964,6 +966,12 @@
 }
 .audience__cards .user-card .user-image__description:hover {
   color: white;
+}
+@media screen and (min-width: 1400px) {
+  .audience__cards .user-card .user-image__description {
+    width: 212px;
+    height: 28px;
+  }
 }
 
 * {
