@@ -827,6 +827,7 @@
   .content__title {
     margin-top: 108px;
     width: 168px;
+    height: 34px;
   }
 }
 .content__description {
@@ -859,6 +860,8 @@
 }
 @media screen and (min-width: 1400px) {
   .content__text {
+    margin-top: 30px;
+    height: 72px;
     width: 555px;
     font-size: 24px;
     line-height: 34px;
@@ -937,6 +940,7 @@
 }
 .audience__images__container:hover {
   background-color: #3141c5;
+  cursor: pointer;
 }
 .audience__images__container:hover .user-image__description {
   color: white;
