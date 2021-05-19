@@ -1,6 +1,7 @@
 .customers {
   display: flex;
   flex-direction: column;
+
   @include for-large-up {
     display: flex;
     flex-direction: row;
@@ -14,6 +15,7 @@
 
   &__row {
     display: flex;
+    justify-content: space-around;
 
     @include for-large-up {
       flex: 1;
@@ -39,6 +41,6 @@
   }
   &__logo {
     filter: brightness(0);
-    min-width: 80%;
+    max-width: 80%;
   }
 }
