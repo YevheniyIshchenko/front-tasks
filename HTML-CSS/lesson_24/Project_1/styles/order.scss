@@ -1,10 +1,14 @@
 .order {
   padding: 50px 15px;
   background-color: $color-light;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
 
   @include for-large-up {
     padding: 73px 0 72px 0;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
   }
@@ -33,7 +37,7 @@
     font-size: 22px;
     line-height: 32px;
     margin: 0;
-    margin-top: 12px;
+    margin-top: 18px;
   }
 
   &__form {
@@ -47,11 +51,11 @@
     margin-top: 40px;
     background: #ffffff;
     border: 1px solid rgba(43, 41, 45, 0.2);
-
     border-radius: 2px;
     height: 48px;
     width: 100%;
     text-align: center;
+    line-height: 13px;
 
     @include for-large-up {
       margin-top: 0;
@@ -71,17 +75,17 @@
     @include for-large-up {
       margin-top: 0;
       margin-left: 10px;
+      flex-shrink: 0;
+    
     }
   }
   &__terms {
     margin-top: 10px;
     font-size: 14px;
     line-height: 22px;
-
     color: $text-color-light-grey;
   }
   &__terms-link {
-    color: blue;
-    //   $text-color-blue
+    color: #3142c6;
   }
 }

@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-top: auto;
   margin-bottom: 0;
+
   &__description {
     display: none;
     width: 360px;
@@ -16,6 +17,7 @@
       display: block;
     }
   }
+
   &__line {
     border-top: 1px solid #2b292d;
     width: 100%;
@@ -37,6 +39,15 @@
     @include for-large-up {
       display: flex;
     }
+  }
+}
+.logo__description {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: $text-color-light-grey;
+  @include for-large-up {
+    display: flex;
   }
 }
 .footer-navigation {
@@ -132,9 +143,10 @@
   &__items {
     color: $text-color-light-grey;
     text-decoration: none;
-  }
-}
+    margin-right: 20px;
 
+}
+}
 .social-links {
   margin-top: 30px;
   margin-bottom: 23px;
@@ -156,10 +168,6 @@
   flex-direction: column;
   align-items: center;
 
-  @include for-large-up {
-    display: none;
-  }
-
   &__image {
     width: 60px;
     height: 60px;
@@ -176,5 +184,9 @@
     line-height: 25px;
     text-align: center;
     color: $text-color-light-grey;
+  }
+
+  @include for-large-up {
+    display: none;
   }
 }

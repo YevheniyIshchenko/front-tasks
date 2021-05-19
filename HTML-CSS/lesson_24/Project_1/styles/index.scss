@@ -22,15 +22,12 @@ html {
 
 .page {
   width: 100%;
-  
+
   @include for-large-up {
-    .page {
-      display: flex;
-      flex-direction: column;
-      max-width: 1400px;
-      margin: auto;
-      min-height: 100vh;
-    }
+    max-width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 }
-
