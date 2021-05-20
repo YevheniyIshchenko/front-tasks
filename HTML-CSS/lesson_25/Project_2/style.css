@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .price-card {
@@ -22,6 +23,9 @@ body {
   background: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
   flex-shrink: 0;
+}
+.price-card:last-child {
+  margin-right: 0;
 }
 .price-card__title {
   display: flex;

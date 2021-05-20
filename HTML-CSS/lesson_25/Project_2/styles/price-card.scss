@@ -2,19 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .price-card {
   position: relative;
   overflow: hidden;
-//   margin-top: 115px;
-//   margin-bottom: 115px;
   width: 380px;
   height: 770px;
   margin-right: 18px;
   background: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
   flex-shrink: 0;
+
+    &:last-child{
+      margin-right: 0;
+  }
 
   &__title {
     display: flex;
