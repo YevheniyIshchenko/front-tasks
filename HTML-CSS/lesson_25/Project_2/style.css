@@ -23,6 +23,7 @@ body {
   margin-right: 18px;
   background: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+  flex-shrink: 0;
 }
 .price-card__title {
   display: flex;
@@ -73,7 +74,7 @@ body {
   text-align: center;
   color: #ffffff;
 }
-.price-card__option-list {
+.price-card__options-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -90,15 +91,15 @@ body {
 .price-card li:nth-child(odd) {
   background-color: #2a3438;
 }
-.price-card .option-list__green::before {
+.price-card .options-list__green::before {
   margin: 18px 22px 19px 22px;
   content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
 }
-.price-card .option-list__blue::before {
+.price-card .options-list__blue::before {
   margin: 18px 22px 19px 22px;
   content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
 }
-.price-card .option-list__red::before {
+.price-card .options-list__red::before {
   margin: 18px 22px 19px 22px;
   content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
 }
