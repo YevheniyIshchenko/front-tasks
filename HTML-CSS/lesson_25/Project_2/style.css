@@ -16,8 +16,6 @@ body {
 .price-card {
   position: relative;
   overflow: hidden;
-  margin-top: 115px;
-  margin-bottom: 115px;
   width: 380px;
   height: 770px;
   margin-right: 18px;
