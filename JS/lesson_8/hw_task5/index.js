@@ -1,0 +1,33 @@
+/* eslint-disable no-restricted-syntax */
+
+/* Для решения этой задачи используй for..in цикл. В реальных проектах это плохая практика,
+ * лучше использовать методы класса Object - keys(), values(), entries(). Но мы с ними пока не познакомитись.
+ * Чтобы eslint не ругался на эту ошибку, для этой задачи он отключен аннотацией eslint-disable
+ * */
+
+const getAdults = (obj) => {
+  // put your code here
+
+  const newObj = {};
+
+  for (const key in obj) {
+    // console.log(obj[key] >= 18);
+    if (obj[key] >= 18) {
+      newObj[key] = obj[key];
+    }
+  }
+
+  return newObj;
+};
+
+const obj3 = {
+  'John Doe': 19,
+  Tom: 17,
+  Bob: 18,
+};
+
+console.log(getAdults(obj3));
+
+// examples
+// getAdults({ 'John Doe': 19, Tom: 17, Bob: 18 }); // ==> { 'John Doe': 19, Bob: 18 }
+// getAdults({ Ann: 56, Andrey: 7 }); // ==> { Ann: 56 }
