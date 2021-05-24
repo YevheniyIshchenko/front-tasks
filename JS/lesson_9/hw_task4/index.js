@@ -4,6 +4,7 @@ function getPeople(obj) {
     .map(function (arr) {
       return arr.name;
     });
+  console.log(arr);
   return arr;
 }
 
