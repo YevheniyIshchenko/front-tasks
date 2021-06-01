@@ -11,7 +11,7 @@ export const getItemsArray = () => {
   return arrList;
 };
 
-getItemList();
-console.log(getItemList());
+getItemsList();
+console.log(getItemsList());
 getItemsArray();
 console.log(getItemsArray());
