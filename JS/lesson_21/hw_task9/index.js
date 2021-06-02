@@ -10,4 +10,4 @@ export const finishForm = () => {
   foormInput.setAttribute('type', 'password');
 };
 
-finishForm();
+// finishForm();
