@@ -4,10 +4,10 @@ export const finishForm = () => {
   inputLogin.setAttribute('name', 'login');
 
   const formElement = document.querySelector('.login-form');
-  formElement.prepend(inputLogin);
+  formElement.append(inputLogin);
 
   const foormInput = document.querySelector('input[name="password"]');
   foormInput.setAttribute('type', 'password');
 };
 
-// finishForm();
+finishForm();
