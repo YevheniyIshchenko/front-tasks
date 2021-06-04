@@ -8,3 +8,7 @@ const handleClick = (event) => {
 // checkBtn[2].addEventListener('click', handleClick);
 
 [...checkBtn].map((el) => el.addEventListener('click', handleClick));
+
+
+
+
