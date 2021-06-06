@@ -1,7 +1,7 @@
 export const getDiff = (startDate, endDate) => {
-  const diff = new Date(endDate.getTime() - startDate.getTime());
-  const yers = diff.getUTCFullYear() - 1970;
-  const months = diff.getUTCMonth();
+  const diff = new Date(Math.abs(endDate.getTime() - startDate.getTime()));
+  // const yers = diff.getUTCFullYear() - 1970;
+  // const months = diff.getUTCMonth();
 
   // let days;
   // if (yers > 0) {
@@ -22,8 +22,8 @@ export const getDiff = (startDate, endDate) => {
   return `${days}d ${hours}h ${minutes}m ${seconds}s`;
 };
 
-const start = new Date(2020, 5, 10, 10, 20, 10);
-const end = new Date(2020, 6, 15, 15, 30, 16);
+// const end = new Date(2020, 5, 10, 10, 20, 10);
+// const start = new Date(2020, 6, 15, 15, 30, 16);
 
-const result = getDiff(start, end);
-console.log(result);
+// const result = getDiff(start, end);
+// console.log(result);
