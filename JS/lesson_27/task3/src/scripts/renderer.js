@@ -3,7 +3,7 @@ import { getItem } from './storage.js';
 const listElem = document.querySelector('.list');
 
 const compareTasks = (a, b) => a.done - b.done;
-;
+
 
 const createCheckbox = ({ done, id }) => {
   const checkboxElem = document.createElement('input');
