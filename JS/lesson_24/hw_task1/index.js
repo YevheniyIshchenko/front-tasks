@@ -23,7 +23,7 @@ export const getDiff = (startDate, endDate) => {
 };
 
 // const end = new Date(2020, 5, 10, 10, 20, 10);
-// const start = new Date(2020, 6, 15, 15, 30, 16);
+// const start = new Date(2021, 6, 15, 15, 30, 16);
 
 // const result = getDiff(start, end);
 // console.log(result);
