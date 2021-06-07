@@ -10,7 +10,7 @@ export const onToggleTask = (e) => {
       return {
         ...task,
         done,
-        finishDate: done ? new Date().toISOString() : null,
+        createDate: done ? new Date().toISOString() : null,
       };
     }
     return task;

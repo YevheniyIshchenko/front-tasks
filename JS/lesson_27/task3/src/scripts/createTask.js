@@ -18,6 +18,7 @@ export const onCreateTask = () => {
     createDate: new Date().toISOString(),
     id: Math.random().toString(),
   });
+    
   setItem('tasksList', newTasksList);
 
   renderTasks();
