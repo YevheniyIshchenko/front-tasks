@@ -14,7 +14,7 @@
 // 5. result
 //    output: new changed Date
 
-const shmoment = (initialDate) => {
+export const shmoment = (initialDate) => {
   const newDate = initialDate;
 
   const datesCalc = {
@@ -81,9 +81,9 @@ const shmoment = (initialDate) => {
   return datesCalc;
 };
 
-const res = shmoment(new Date(2020, 0, 7, 17, 17, 17))
-  .add('years', 2)
-  .subtract('minutes', 10)
-  .result();
+// const res = shmoment(new Date(2020, 0, 7, 17, 17, 17))
+//   .add('years', 2)
+//   .subtract('minutes', 10)
+//   .result();
 
-console.log(res);
+// console.log(res);
