@@ -15,7 +15,7 @@
 //    output: new changed Date
 
 export const shmoment = (initialDate) => {
-  const newDate = initialDate;
+  const newDate = new Date(initialDate);
 
   const datesCalc = {
     add(dataType, value) {
@@ -27,7 +27,7 @@ export const shmoment = (initialDate) => {
           newDate.setMonth(newDate.getMonth() + value);
           break;
         case 'days':
-          newDate.setDay(newDate.getDay() + value);
+          newDate.setDate(newDate.getDate() + value);
           break;
         case 'hours':
           newDate.setHours(newDate.getHours() + value);
@@ -55,7 +55,7 @@ export const shmoment = (initialDate) => {
           newDate.setMonth(newDate.getMonth() - value);
           break;
         case 'days':
-          newDate.setDay(newDate.getDay() - value);
+          newDate.setDate(newDate.getDate() - value);
           break;
         case 'hours':
           newDate.setHours(newDate.getHours() - value);
