@@ -1,4 +1,4 @@
-export const addImage = (imgSrc) => {
+const addImage = (imgSrc) => {
   const p = new Promise((resolve, reject) => {
     const imgElem = document.createElement('img');
     imgElem.setAttribute('alt', 'My Photo');
@@ -8,7 +8,6 @@ export const addImage = (imgSrc) => {
 
     const onImageLoaded = () => {
       const { width, height } = imgElem;
-      // const sizeElem = document.querySelector('.image-size');
       resolve({ width, height });
     };
 
@@ -20,8 +19,8 @@ export const addImage = (imgSrc) => {
   return p;
 };
 
-// const imgSrc =
-//   'https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg';
+const imgSrc =
+  'https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg';
 
-// const res = addImage(imgSrc);
-// console.log(res);
+const res = addImage(imgSrc);
+console.log(res);
