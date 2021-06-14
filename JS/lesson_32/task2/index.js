@@ -15,12 +15,12 @@ const request = (url) =>
   });
 
 const servers = [
-  'https://server.com.us',
-  'https://server.com.eu',
-  'https://server.com.au',
+  'https://server.com/us',
+  'https://server.com/eu',
+  'https://server.com/au',
 ];
 
-export const getUserASAP = (userId) => {
+const getUserASAP = (userId) => {
   const userUrls = servers.map((serverUrl) => `${serverUrl}/${userId}`);
   const requests = userUrls.map((userUrl) => request(userUrl));
   return Promise.race(requests);
