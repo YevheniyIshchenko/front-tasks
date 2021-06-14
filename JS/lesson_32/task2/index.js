@@ -26,4 +26,4 @@ export const getUserASAP = (userId) => {
   return Promise.race(requests);
 };
 
-getUserASAP('userId777').then((res) => console.log(res));
+// getUserASAP('userId777').then((res) => console.log(res));
