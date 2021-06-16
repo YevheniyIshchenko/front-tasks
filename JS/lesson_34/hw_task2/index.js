@@ -1,6 +1,5 @@
 const baseUrl = 'https://60c9e9df772a760017204c05.mockapi.io/api/v1/form';
 
-// const baseUrl = 'https://6541623';
 const formElem = document.querySelector('.login-form');
 const submitBtn = document.querySelector('.submit-button');
 const passwordElem = document.getElementById('password');
@@ -22,14 +21,15 @@ formElem.addEventListener('input', validateForm);
 // console.log(usersPassword);
 
 // console.log(inputData);
-const createUser = () => {
-  const userData = {
-    email: document.getElementById('email').value,
-    userName: document.getElementById('name').value,
-    password: document.getElementById('password').value,
-  };
-  console.log(userData);
-  return fetch(baseUrl, {
+//   const userData = {
+//     email: document.getElementById('email').value,
+//     userName: document.getElementById('name').value,
+//     password: document.getElementById('password').value,
+// };
+//   console.log(userData);
+
+const createUser = (userData) =>
+  fetch(baseUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
@@ -41,6 +41,17 @@ const createUser = () => {
     .catch(() => {
       errorText.textContent = 'Failed to create user';
     });
+
+const onCreateUser = () => {
+  const user = {
+    email: document.getElementById('email').value,
+    name: document.getElementById('name').value,
+    password: document.getElementById('password').value,
+  };
+  console.log(user);
+  // const user = new FormData(formElem);
+  // console.log(user);
+  createUser(user);
 };
 
 const clearForm = () => {
@@ -49,5 +60,5 @@ const clearForm = () => {
   passwordElem.value = '';
 };
 
-submitBtn.addEventListener('submit', createUser());
-// submitBtn.addEventListener('click', createUser());
+// submitBtn.addEventListener('submit', onCreateUser);
+submitBtn.addEventListener('click', onCreateUser);
