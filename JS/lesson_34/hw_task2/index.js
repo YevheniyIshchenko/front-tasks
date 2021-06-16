@@ -13,6 +13,12 @@ const validateForm = () => {
 
 formElem.addEventListener('input', validateForm);
 
+const clearForm = () => {
+  formElem.value = '';
+  submitBtn.value = '';
+  passwordElem.value = '';
+};
+
 const createUser = (userData) =>
   fetch(baseUrl, {
     method: 'POST',
@@ -34,13 +40,9 @@ const onCreateUser = () => {
     password: document.getElementById('password').value,
   };
   createUser(user);
+  clearForm();
 };
 
-const onClearForm = () => {
-  formElem.value = '';
-  submitBtn.value = '';
-  passwordElem.value = '';
-};
 
-// submitBtn.addEventListener('submit', onCreateUser);
-submitBtn.addEventListener('click', onCreateUser, onClearForm);
+
+submitBtn.addEventListener('click', onCreateUser);
