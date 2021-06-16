@@ -14,9 +14,9 @@ const validateForm = () => {
 formElem.addEventListener('input', validateForm);
 
 const clearForm = () => {
-  formElem.value = '';
-  submitBtn.value = '';
-  passwordElem.value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('name').value = '';
+  document.getElementById('password').value = '';
 };
 
 const createUser = (userData) =>
