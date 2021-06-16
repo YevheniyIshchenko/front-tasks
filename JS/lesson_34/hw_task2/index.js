@@ -13,21 +13,6 @@ const validateForm = () => {
 
 formElem.addEventListener('input', validateForm);
 
-// const userEmail = document.getElementById('email').value;
-// const usersName = document.getElementById('name').value;
-// const usersPassword = document.getElementById('password').value;
-// console.log(userEmail);
-// console.log(usersName);
-// console.log(usersPassword);
-
-// console.log(inputData);
-//   const userData = {
-//     email: document.getElementById('email').value,
-//     userName: document.getElementById('name').value,
-//     password: document.getElementById('password').value,
-// };
-//   console.log(userData);
-
 const createUser = (userData) =>
   fetch(baseUrl, {
     method: 'POST',
@@ -48,17 +33,14 @@ const onCreateUser = () => {
     name: document.getElementById('name').value,
     password: document.getElementById('password').value,
   };
-  console.log(user);
-  // const user = new FormData(formElem);
-  // console.log(user);
   createUser(user);
 };
 
-const clearForm = () => {
+const onClearForm = () => {
   formElem.value = '';
   submitBtn.value = '';
   passwordElem.value = '';
 };
 
 // submitBtn.addEventListener('submit', onCreateUser);
-submitBtn.addEventListener('click', onCreateUser);
+submitBtn.addEventListener('click', onCreateUser, onClearForm);
