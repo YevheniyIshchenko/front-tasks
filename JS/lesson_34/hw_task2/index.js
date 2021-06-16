@@ -28,7 +28,10 @@ const createUser = (userData) =>
     body: JSON.stringify(userData),
   })
     .then((response) => response.json())
-    .then((response) => alert(JSON.stringify(response)))
+    .then((response) => {
+      alert(JSON.stringify(response));
+      clearForm();
+    })
     .catch(() => {
       errorText.textContent = 'Failed to create user';
     });
@@ -40,9 +43,6 @@ const onCreateUser = () => {
     password: document.getElementById('password').value,
   };
   createUser(user);
-  clearForm();
 };
-
-
 
 submitBtn.addEventListener('click', onCreateUser);
