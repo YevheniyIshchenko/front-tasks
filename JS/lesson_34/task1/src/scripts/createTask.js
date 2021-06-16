@@ -1,6 +1,6 @@
 import { renderTasks } from './renderer.js';
 import { getItem, setItem } from './storage.js';
-import { createTask, getTasksList} from './tasksGateway.js'
+import { createTask, getTasksList, deleteTask } from './tasksGateway.js';
 
 export const onCreateTask = () => {
   const taskTitleInputElem = document.querySelector('.task-input');
@@ -8,13 +8,13 @@ export const onCreateTask = () => {
   if (!text) {
     return;
   }
+
   taskTitleInputElem.value = '';
 
   const newTask = {
     text,
     done: false,
     createDate: new Date().toISOString(),
-    id: Math.random().toString(),
   };
 
   createTask(newTask)
@@ -23,6 +23,20 @@ export const onCreateTask = () => {
       setItem('tasksList', newTasksList);
       renderTasks();
     });
+};
+
+export const onDeleteTask = (e) => {
+  const deleteBtn = e.target.classList.contains('list-item__delete-btn');
+
+  if (deleteBtn) {
+    const task = e.target.dataset.id;
+    deleteTask(task)
+      .then(() => getTasksList())
+      .then((newTasksList) => {
+        setItem('tasksList', newTasksList);
+        renderTasks();
+      });
+  }
 };
 
 // algo
